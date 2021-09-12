@@ -1,0 +1,12 @@
+{
+  "name": "enter-the-project-name-here",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "private": true,
+  "devDependencies": {
+    "esbuild": "^0.12.26"
+  },
+  "scripts": {
+    "start": "node build.js && echo ----- && node dist/index.js && echo -----"
+  }
+}

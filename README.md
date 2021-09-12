@@ -1,0 +1,3 @@
+# Discord-NoMoreInviteLink
+
+特定の単語がサーバー名に含まれる招待リンクの投稿をブロックします。
