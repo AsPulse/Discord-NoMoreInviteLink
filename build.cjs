@@ -17,3 +17,16 @@ require('esbuild').build({
 }).catch(() => {
     console.log(`${red}Build failed.${reset} [${new Date().getTime() - startTime.getTime()}ms]`)
 });
+
+require('esbuild').build({
+    entryPoints: ['src/chk.ts'],
+    bundle: false,
+    outfile: 'dist/chk.js',
+    minify: false,
+    sourcemap: true,
+    platform: 'node'
+}).then(() => {
+    console.log(`${magenta}Build finished successfully.${reset} [${new Date().getTime() - startTime.getTime()}ms]`)
+}).catch(() => {
+    console.log(`${red}Build failed.${reset} [${new Date().getTime() - startTime.getTime()}ms]`)
+});
