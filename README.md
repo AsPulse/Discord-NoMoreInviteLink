@@ -1,3 +1,4 @@
 # Discord-NoMoreInviteLink
 
 特定の単語がサーバー名に含まれる招待リンクの投稿をブロックします。
+src/chk.tsに、サーバー名を受け取り、禁止したいリンクならtrue,そうでないならfalseを返すような関数をdefaultでexportしてください。
