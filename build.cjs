@@ -7,7 +7,7 @@ const reset   = '\u001b[0m';
 console.log(`${magenta}The build has started...${reset}`);
 require('esbuild').build({
     entryPoints: ['src/index.ts'],
-    bundle: true,
+    bundle: false,
     outfile: 'dist/index.js',
     minify: false,
     sourcemap: true,
